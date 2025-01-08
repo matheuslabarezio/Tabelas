@@ -5,14 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
     <style>
+
+
         body{
-            font-family: Arial, Helvetica, sans-serif;    
+            font-family: Arial, Helvetica, sans-serif; 
+          
         }
         table{
-            500px;
+            width: 500px;
             border-collapse:collapse;
 
     
+        }
+
+        caption{
+            font-size: 1.5em ;
+            font-weight: bolder;
+            padding: 10px;
+            background-color: lightgrey;
         }
 
         td,th{
@@ -34,10 +44,11 @@
     <h1>Uso de tabelas grandes</h1>
 
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estados</th>
-                <th>população</th>
+                <th scope="col">Estados</th>
+                <th scope="col" style="width:100px;">população</th>
             </tr>
         </thead>
         <tbody>
@@ -56,7 +67,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>total de habitantes</th>
+                <th scope="row">total de habitantes</th>
                 <td>0000</td>
             </tr>
         </tfoot>
